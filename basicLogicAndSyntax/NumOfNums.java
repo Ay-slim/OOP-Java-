@@ -1,3 +1,4 @@
+package basicLogicAndSyntax;
 import java.util.Scanner;
 public class NumOfNums {
   public static void main (String[] args) {

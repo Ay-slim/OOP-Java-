@@ -1,3 +1,4 @@
+package basicLogicAndSyntax;
 public class PrintingStars {
   public static void main(String[] args) {
     // printStars(5);

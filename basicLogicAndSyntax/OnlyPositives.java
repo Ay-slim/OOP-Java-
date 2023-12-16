@@ -1,3 +1,4 @@
+package basicLogicAndSyntax;
 import java.util.Scanner;
 
 public class OnlyPositives {
