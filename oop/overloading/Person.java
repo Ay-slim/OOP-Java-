@@ -7,15 +7,15 @@ public class Person {
   private int height;
   private int weight;
 
-  public Person(String name, int age) {
+  public Person(String name, int age, int height, int weight) {
     this.name = name;
     this.age = age;
-    this.weight = 0;
-    this.height = 0;
+    this.weight = weight;
+    this.height = height;
   }
 
   public Person(String name) {
-      this(name, 0);
+      this(name, 1, 0, 0);
   }
 
   public void printPerson() {
@@ -65,7 +65,7 @@ public class Person {
   }
 
   public static void main(String[] args) {
-    Person paul = new Person("Paul", 24);
+    Person paul = new Person("Paul", 24, 57, 180);
     Person eve = new Person("Eve");
 
     System.out.println(paul);
