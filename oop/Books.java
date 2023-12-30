@@ -25,6 +25,20 @@ public class Books {
     return this.pubYear;
   }
 
+  public boolean equals(Books toCompareWith) {
+    if (this == toCompareWith) {
+      return true;
+    }
+    if (
+        this.title == toCompareWith.getTitle() &&
+        this.pages == toCompareWith.getPages() &&
+        this.pubYear == toCompareWith.getPubYear()
+      ) {
+      return true;
+    }
+    return false;
+  }
+
   public static void main (String[] args) {
      Scanner scanner = new Scanner(System.in);
      ArrayList<Books> books = new ArrayList<Books>();
