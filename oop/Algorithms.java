@@ -50,6 +50,17 @@ public class Algorithms {
     array[index1] = array[index2];
     array[index2] = tmp;
   }
+
+  public static void sort(int[] array) {
+    int currentStartIdx = 0;
+    System.out.println("Sort check: ");
+    while (currentStartIdx < array.length - 1) {
+      System.out.println(Arrays.toString(array));
+      int smallestValueIdx = indexOfSmallestFrom(array, currentStartIdx);
+      swap(array, currentStartIdx, smallestValueIdx);
+      currentStartIdx++;
+    }
+  }
   public static void main(String[] arg) {
     int[] testArr = {4, 5, 1, 8};
     //Algorithms algo = new Algorithms();
@@ -70,5 +81,8 @@ public class Algorithms {
 
     Algorithms.swap(numberss, 0, 3);
     System.out.println(Arrays.toString(numberss));
+
+    int[] numbersSort = {8, 3, 7, 9, 1, 2, 4};
+    Algorithms.sort(numbersSort);
   }
 }
